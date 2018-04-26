@@ -1,0 +1,98 @@
+body {
+    background-color: #00004c;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    max-width: 400px;
+    padding: 10px;
+    display: inline-grid;
+    background-color: #4c4c4c;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    min-height: 1000px;
+}
+
+article img {
+    margin: 0 10px 10px 0;
+    height: 550px;
+    width: 100%;
+}
+
+strong {
+    color: #9bff9b;
+}
+
+input, textarea, select {
+    width: 400px;
+    padding: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#test {
+    text-align: center;
+}
+
+
+::-webkit-input-placeholder {
+    color: #c7c6c6;
+}
+
+input[type="submit"] {
+    border: none;
+    background-color: #587d6c;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #61ba82;
+}
+
+.notice.success {
+    color: #ddf2dd;
+    background-color: #66b266;
+}
+
+.notice {
+    padding: 1.5em 1em;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0 0 1em 0;
+}
+
+.notice a {
+    display: block;
+    padding: 1em 0 0 0;
+    color: inherit;
+}
+
+.notice a:hover, .add_new:hover {
+    color: #2d2d2d;
+}
+
+
+a.add_new {
+    display: block;
+    color: #ddf2dd;
+    background-color: #66b266;
+}
+
+a.add_new.notice:hover {
+    background-color: #8ac78a;
+}
+
+form {
+    margin: 0 auto 0 auto;
+    max-width: 400px;
+}
