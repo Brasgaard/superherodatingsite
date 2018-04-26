@@ -33,32 +33,34 @@ $logged_in_superhero = $database->query("SELECT * FROM superheroes WHERE id = 1"
 		$comments = $database->query("SELECT * FROM comments LEFT JOIN superheroes ON comments.superhero_from = superheroes.id WHERE superhero_to = " . $superhero["id"]);
 		?>
 		<article class="profiles">
-			<h2><?php echo $superhero['name'];?> - <?php echo $superhero['alias'];?></h2>
 			<img class="photos" src="<?php echo $superhero['profilepicture'];?>">
-			<p>Age: <?php echo $superhero['age'];?></p>
-			<p>Gender: <?php echo $superhero['gender'];?></p>
-			<p>Location: <?php echo $superhero['location'];?></p>
-			<p>Description: <?php echo $superhero['description'];?></p>
+			<h2><?php echo $superhero['name'];?> - <?php echo $superhero['alias'];?></h2>
+			<button class="likebtn"><a href="./like.php?id=<?php echo $superhero['id']; ?>">Like <?php echo $superhero['likes'];?></a></button>
+			<p>Age:<br><?php echo $superhero['age'];?></p>
+			<p>Gender:<br><?php echo $superhero['gender'];?></p>
+			<p>Location:<br><?php echo $superhero['location'];?></p>
+			<p>Description:<br><?php echo $superhero['description'];?></p>
+			<form action="add-comment.php" method="post" id="usrform">
+				<input type="hidden" name="superhero_from" value="<?php echo $logged_in_superhero["id"];?>">
+				<input type="hidden" name="superhero_to" value="<?php echo $superhero['id'];?>">
+				<textarea rows="4" cols="50" name="text" placeholder="Enter comment here..."></textarea>
+				<button type="submit">Add comment</button>
+			</form>
 
 			<?php
 				foreach ($comments as $comment) {
 			?>
-				<dl>
-					<dt><b><?php echo $comment["alias"];?></b></dt>
-					<dd><?php echo $comment["text"];?></dd>
+				<p>
+					<p><b><?php echo $comment["alias"];?>:</b></p>
+					<p><?php echo $comment["text"];?></p>
+					<br>
 				</dl>
 			<?php
 				}
 			?>
 
-			<form action="add-comment.php" method="post" id="usrform">
-				<input type="hidden" name="superhero_from" value="<?php echo $logged_in_superhero["id"];?>">
-				<input type="hidden" name="superhero_to" value="<?php echo $superhero['id'];?>">
-
-				<textarea rows="4" cols="50" name="text" placeholder="Enter comment here..."></textarea>
-				<button type="submit">Add comment</button>
-			</form>
 		</article>
+
 		<?php
 	}
 ?>

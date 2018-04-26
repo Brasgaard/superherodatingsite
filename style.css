@@ -96,3 +96,19 @@ form {
     margin: 0 auto 0 auto;
     max-width: 400px;
 }
+
+.likebtn {
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    padding: 4px 4px;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
