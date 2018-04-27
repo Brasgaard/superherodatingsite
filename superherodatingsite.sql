@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2018 at 12:05 AM
+-- Generation Time: Apr 27, 2018 at 03:14 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.10
 
@@ -67,7 +67,7 @@ CREATE TABLE `superheroes` (
 --
 
 INSERT INTO `superheroes` (`name`, `age`, `gender`, `location`, `alias`, `description`, `profilepicture`, `id`, `likes`) VALUES
-('Anung Un Rama', 33, 'Male', 'East Bromwich, England', 'Hellboy', 'I can promise you two things: One, I will always look this good, and two I will never give up on you.', 'https://www.superherodb.com/pictures2/portraits/10/100/813.jpg', 1, 0),
+('Anung Un Rama', 33, 'Male', 'East Bromwich, England', 'Hellboy', 'I can promise you two things: One, I will always look this good, and two I will never give up on you.', 'https://www.superherodb.com/pictures2/portraits/10/100/813.jpg', 1, 1),
 ('Bruce Banner', 49, 'Male', 'Dayton, Ohio.', 'Hulk', 'Any last words? Hulk... SMASH!!!', 'https://www.superherodb.com/pictures2/portraits/10/100/83.jpg ', 2, 0),
 ('Diana Prince', 43, 'Female', 'Paradise Island.', 'Wonder Woman', 'Of all people you know who I am. Who the world needs me to be, I\'m Wonder Woman. ', 'https://www.superherodb.com/pictures2/portraits/10/100/807.jpg ', 3, 0),
 ('Selina Kyle', 26, 'Female', 'Gotham City, USA.', 'Catwoman', 'I\'m a thief--and stealing is what I do. Not so much for the prize or the possession or even the profit...but for the art of doing it...because I can...and because I\'m good.', 'https://www.superherodb.com/pictures2/portraits/10/100/659.jpg ', 4, 0),
@@ -75,7 +75,7 @@ INSERT INTO `superheroes` (`name`, `age`, `gender`, `location`, `alias`, `descri
 ('Carlos Ray Norris', 78, 'Male', 'Oklahoma, USA.', 'Chuck Norris', 'A lot of times people look at the negative side of what they feel they can\'t do. I always look on the positive side of what I can do.', 'https://www.superherodb.com/pictures2/portraits/10/100/954.jpg ', 6, 0),
 ('Kakarot', 736, 'Male', '439 East District, Mount Paozu.', 'Goku', 'I am the hope of the universe....I am the answer to all living things that cry out for peace...I am the protector of the innocent...I am the light in the darkness...I am truth. Ally to good... Nightmare to you!!!', 'https://www.superherodb.com/pictures2/portraits/10/100/1284.jpg ', 7, 0),
 ('Natasha Romanoff', 33, 'Female', 'Moscow, Russia.', 'Black Widow', 'You might think I\'m cold-hearted. I am. I can\'t afford distractions. I\'ve got work to do.', 'https://www.superherodb.com/pictures2/portraits/10/100/248.jpg ', 8, 0),
-('Harley Quinn', 25, 'Female', 'Gotham City, USA.', 'Harley Quinn', 'You think I\'m just a doll. A doll that\'s pink and light. A doll you can arrange any way you like. You\'re wrong. Very wrong. What you think of me is only a ghost of time. I am dangerous. And I will show you just how dark I can be.', 'https://www.superherodb.com/pictures2/portraits/10/100/701.jpg ', 9, 3),
+('Harley Quinn', 25, 'Female', 'Gotham City, USA.', 'Harley Quinn', 'You think I\'m just a doll. A doll that\'s pink and light. A doll you can arrange any way you like. You\'re wrong. Very wrong. What you think of me is only a ghost of time. I am dangerous. And I will show you just how dark I can be.', 'https://www.superherodb.com/pictures2/portraits/10/100/701.jpg ', 9, 4),
 ('Saitama', 25, 'Male', 'Z-City', 'One Punch Man', '100 push-ups, 100 sit-ups, 100 squats, and a 10km run EVERY SINGLE DAY!!!', 'https://www.superherodb.com/pictures2/portraits/10/100/10522.jpg ', 10, 0);
 
 --

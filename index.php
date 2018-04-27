@@ -36,10 +36,10 @@ $logged_in_superhero = $database->query("SELECT * FROM superheroes WHERE id = 1"
 			<img class="photos" src="<?php echo $superhero['profilepicture'];?>">
 			<h2><?php echo $superhero['name'];?> - <?php echo $superhero['alias'];?></h2>
 			<button class="likebtn"><a href="./like.php?id=<?php echo $superhero['id']; ?>">Like <?php echo $superhero['likes'];?></a></button>
-			<p>Age:<br><?php echo $superhero['age'];?></p>
-			<p>Gender:<br><?php echo $superhero['gender'];?></p>
-			<p>Location:<br><?php echo $superhero['location'];?></p>
-			<p>Description:<br><?php echo $superhero['description'];?></p>
+			<p><b>Age:</b><br><?php echo $superhero['age'];?></p>
+			<p><b>Gender:</b><br><?php echo $superhero['gender'];?></p>
+			<p><b>Location:</b><br><?php echo $superhero['location'];?></p>
+			<p><b>Description:</b><br><?php echo $superhero['description'];?></p>
 			<form action="add-comment.php" method="post" id="usrform">
 				<input type="hidden" name="superhero_from" value="<?php echo $logged_in_superhero["id"];?>">
 				<input type="hidden" name="superhero_to" value="<?php echo $superhero['id'];?>">
